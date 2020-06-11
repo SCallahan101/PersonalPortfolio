@@ -1,0 +1,529 @@
+* body{
+    box-sizing: border-box;
+    background-image: url("./futuristic-technology-background-with-honeycombs/3573353.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #084F60;
+    background-blend-mode: screen;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+@-ms-viewport{
+    width: device-width;
+}
+[class*="col-"]{
+    float: left;
+    width: 100%;
+}
+@media only screen and (min-width: 600px){
+    .col-T-1 {
+        width: 8.33%;
+    }
+    .col-T-2 {
+        width: 16.66%;
+    }
+    .col-T-3 {
+        width: 25%;
+    }
+    .col-T-4 {
+        width: 33.33%;
+    }
+    .col-T-5 {
+        width: 41.66%;
+    }
+    .col-T-6 {
+        width: 50%;
+    }
+    .col-T-7 {
+        width: 58.33%;
+    }
+    .col-T-8 {
+        width: 66.66%;
+    }
+    .col-T-9 {
+        width: 75%;
+    }.col-T-10 {
+        width: 83.33%;
+    }
+    .col-T-11 {
+        width: 91.66%;
+    }
+    .col-T-12 {
+        width: 100%;
+    }
+    .mobileNav{
+        visibility: hidden;
+    }
+    .methodContact{
+        font-size: 2vw;
+    }
+}
+@media only screen and (min-width: 768px){
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }.col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+    .methodContact{
+        font-size: 1.7vw;
+    }
+}
+#navigationBar{
+    display: flex;
+    /* flex-flow: wrap; */
+    justify-content: center;
+    /* border: solid; */
+    padding: 5px;
+}
+#navigationBar a{
+    /* border: solid blue; */
+    width: 100px;
+    padding: 10px 10px 8px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    margin: auto;
+    font-size: larger;
+    color: white;
+}
+#navigationBar a:hover{
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    border-radius: 2px;
+}
+#navigationBar a:hover::after{
+    /* visibility: hidden; */
+    content: '';
+    height: 2px;
+    width: 30%;
+    background: white;
+    position: absolute;
+    left: calc(50% - 15%);
+    bottom: 2px;
+}
+#navigationBar img{
+    border-radius: 33px;
+    width: 100px;
+    margin: auto;
+    height: auto;
+}
+.mobileNav img{
+    border-radius: 33px;
+    width: 100px;
+    margin: auto;
+    height: auto;
+}
+.mobileNav button{
+    background: none;
+    border: none;
+}
+.mobileNav {
+    position: relative;
+    top: -80px;
+    display: inline-block;
+}
+.drop-content{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 118px;
+    /* background-color: darkcyan; */
+    min-width: 175px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.drop-content a {
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+.mobileNav:hover .drop-content{
+    display: block;
+}
+.drop-content a:hover{
+    border-bottom: solid black;
+}
+
+@media only screen and (max-width: 600px){
+    .mobileNav{
+        visibility: visible;
+    }
+    #navigationBar{
+        visibility: hidden;
+    }
+    .contactMeBox{
+        margin-top: -50px;
+    }
+}
+
+/*For Welcome page only*/
+
+#welcomeContainer{
+    text-align: center;
+    margin: 50px auto;
+    padding: 30px;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+footer{
+    /* position: absolute;
+    bottom: 0; */
+    text-align: center;
+    /* left: 0;
+    right: 0; */
+    font-size: xx-small;
+}
+
+/*For Intro page only */
+#introContainer{
+    /* display: flex; */
+    
+}
+.picContainer{
+    position: relative;
+    display: grid;
+}
+.hoverInfo{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.picContainer:hover img{
+    opacity: .5;
+}
+.picContainer:hover .hoverInfo{
+    opacity: 1;
+    border: 1px solid black;
+    background-color: #084F60;
+    padding: 5px;
+}
+.picOfMe{
+    object-fit: cover;
+    width: 90%;
+    border-radius: 2px;
+    max-height: 100%;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactMeBox{
+    /* margin-top: -50px; */
+}
+.photosBox{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.introBox h1{
+    text-align: center;
+    margin-top: -50px;
+}
+.contactInfoBox{
+    max-width: 400px;
+    /* width: 100%; */
+    padding: 0 30px;
+    /* margin: 0 auto; */
+    /* box-sizing: border-box; */
+    
+}
+.contactInfoBox > .methodContact{
+    position: relative;
+    /* font-size: 1.7vw; */
+    outline: 0;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    /* -webkit-clip-path: polygon(25px 0%, 100% 0%, calc(100% - 25px) 100%, 0% 100%);
+    clip-path: polygon(25px 0%, 100% 0%, calc(100%-25px) 100%, 0% 100%);
+    background:rgb(187, 74, 159); */
+    /* border: solid black; */
+    padding: 20px 75px 20px 25px;
+    /* font-size: 2em; */
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    /* color: #333; */
+    text-transform: uppercase;
+    margin: 0 0 15px;
+    list-style-type: none;
+}
+#svgPicDoc {
+    width: 40px;
+    height: auto;
+}
+.contactInfoBox > .methodContact::marker {
+    display: none;
+}
+.contactInfoBox > .methodContact::-webkit-details-marker {
+    display: none;
+}
+.contactInfoBox > .methodContact:hover {
+    text-indent: 15px;
+}
+.contactInfoBox > .methodContact:after {
+    content: "+";
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position: absolute;
+    font-size: 1.5em;
+    right: 35px;
+    top: 50%;
+    /* color: #000; */
+    line-height: 0;
+    /* -webkit-transform: translatey(-50%);
+            transform: translatey(-50%); */
+    mix-blend-mode: overlay;
+  }
+  
+  .contactInfoBox > details[open] .methodContact {
+    text-indent: 30px;
+  }
+  .contactInfoBox > details[open] .methodContact:before {
+    text-indent: -10px;
+  }
+  .contactInfoBox[open] .methodContact:after {
+    content: "‑";
+    /* -moz-transform: scale(1, -1);
+    -webkit-transform: scale(1, -1);
+    -o-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    transform: scale(1, -1); */
+  }
+.contactInfoBox > p{
+    position: relative;
+    font-size: 16px;
+    outline: 0;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    /* -webkit-clip-path: polygon(78px 0%, 100% 0%, calc(100% - 25px) 100%, 16% 100%);
+    clip-path: polygon(78px 0%, 100% 0%, calc(100%-25px) 100%, 16% 100%);
+    background:rgb(187, 74, 159); */
+    padding: 10px;
+    /* font-size: 2em; */
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    /* color: #333; */
+    text-transform: uppercase;
+    margin: 0 0 15px;
+    list-style-type: none;
+}
+.contactInfoBox > p::before{
+    position: absolute;
+    color: rgba(0, 0 0, 0.5);
+    left: 2%;
+    top: -30px;
+    font-size: 112px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    mix-blend-mode: overlay;
+}
+.contactInfoBox > p > a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+.contactInfoBox > p > a:hover {
+    color: yellowgreen;
+}
+
+/* Only for My Works */
+.showcaseBox{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    width: 95%;
+    margin: 10px auto;
+    /* border: solid black; */
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+@media only screen and (max-width: 1000px){
+    /* .photosBox{
+        grid-template-columns: auto auto;
+    } */
+}
+@media only screen and (max-width: 768px){
+    .showcaseBox{
+        grid-template-columns: auto;
+        margin-top: -50px;
+    }
+    .deafBox{
+        margin-top: -50px !important;
+    }
+    .boxOfInterests{
+        margin-top: -50px !important;
+    }
+    .photosBox{
+        grid-template-columns: auto;
+    }
+    .picOfMe{
+        width: 75%;
+        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contactInfoBox{
+
+        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* .showcaseBox{
+    border: solid black;
+    max-width: 1000px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+.showcaseBox::before,
+.showcaseBox::after {
+    display: table;
+    content: '';
+}
+.showcaseBox{
+    clear: both;
+}
+.col-3 {
+    float: left;
+} */
+.githubProject{
+    width: 95%;
+    border-radius: 2px;
+    height: auto;
+    text-align: center;
+    /* border: solid red; */
+}
+.projectBox{
+    border: solid black;
+    border-radius: 2px;
+    text-align: center;
+    height: auto;
+    width: auto;
+}
+
+/*Only for Deaf Culture */
+
+.deafBox{
+    float: unset;
+    text-align: center;
+    /* width: 80%; */
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+/* Only for My Interests */
+.boxOfInterests{
+    float: unset;
+    /* width: 5rem; */
+    margin: 0 auto;
+    padding: 10px;
+    height: auto;
+    /* border: solid purple; */
+    text-align: center;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+.boxInterests{
+    width: 230px;
+    padding: 5px 10px;
+    margin: 0px auto;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    background-color: 363C49;
+    /* background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px); */
+}
+.boxInterests p{
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+.boxOfInterests > h3{
+    /* border: solid 1px; */
+    border-bottom: solid 1px;
+    padding-bottom: 5px;
+    margin: 5px auto;
+    width: 250px;
+    /* background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4); */
+}
+.boxInterests > summary::marker {
+    display: none;
+}
+.boxInterests > summary::-webkit-details-marker {
+    display: none;
+}
+.boxInterests > summary:before {
+    content: "↠";
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    margin-right: 5px;
+    /* position: absolute; */
+    font-size: 1.5em;
+    /* right: 35px; */
+    /* top: 50%; */
+    line-height: 0;
+    mix-blend-mode: overlay;
+  }
+  .boxInterests[open] summary:before {
+    content: "↡";
+  }
+  .boxInterests > summary:focus{
+    outline:none;
+}
