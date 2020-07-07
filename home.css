@@ -9,6 +9,11 @@
     font-family: 'Roboto', sans-serif;
     color: white;
 }
+footer{
+    position: absolute;
+    bottom: 0;
+    
+}
 @-ms-viewport{
     width: device-width;
 }
@@ -65,6 +70,12 @@
         margin-top: unset !important;
     }
 }
+@media only screen and (min-width: 800px){
+    .showcaseBox{
+        grid-template-columns: 1fr 1fr !important;
+        margin-top: -50px !important;
+    }
+}
 @media only screen and (min-width: 768px){
     .col-1 {
         width: 8.33%;
@@ -108,11 +119,10 @@
         height: 40vh !important;
     }
     .showcaseBox{
-        grid-template-columns: auto auto !important;
-        margin-top: -50px !important;
+        width: 90% !important;
     }
     .photosBox{
-        grid-template-columns: auto auto !important;
+        grid-template-columns: 1fr 1fr !important;
     }
     .introBox h1{
         margin-top: -50px !important;
@@ -120,6 +130,12 @@
     .picOfMe{
         width: 90% !important;
     }
+    .projectInfo{
+        font-size: 2vmin !important;
+    }
+    /* .projectInfo > p{
+        font-size: 2vmin !important;
+    } */
 }
 #navigationBar{
     display: flex;
@@ -131,7 +147,7 @@
 }
 #navigationBar a{
     /* border: solid blue; */
-    width: 100px;
+    width: 20%;
     padding: 10px 10px 8px;
     text-align: center;
     text-decoration: none;
@@ -139,6 +155,9 @@
     margin: auto;
     font-size: larger;
     color: white;
+}
+.disabledLink {
+    pointer-events: none;
 }
 #navigationBar a:hover{
     background-color: rgba(255, 255, 255, .15);  
@@ -268,7 +287,7 @@ footer{
     object-fit: cover;
     width: 75%;
     border-radius: 2px;
-    max-height: 100%;
+    /* max-height: 100%; */
     margin: auto;
     margin-left: auto;
     margin-right: auto;
@@ -302,6 +321,9 @@ footer{
     margin-top: 0;
     font-size: 14px;
 }
+.listOfKnowledge p{
+    margin-bottom: 5px;
+}
 .contactInfoBox > .methodContact{
     position: relative;
     /* font-size: 1.7vw; */
@@ -327,7 +349,7 @@ footer{
     list-style-type: none;
 }
 #svgPicDoc {
-    width: 40px;
+    width: 30px;
     height: auto;
 }
 .contactInfoBox > .methodContact::marker {
@@ -392,6 +414,20 @@ footer{
     margin: 0 0 15px;
     list-style-type: none;
 }
+.contactInfoBox > section{
+    /* position: relative;
+    font-size: 16px;
+    outline: 0;
+    overflow: hidden; */
+    cursor: pointer;
+    /* text-align: center; */
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    margin: 0 0 15px;
+}
 .contactInfoBox > p::before{
     position: absolute;
     color: rgba(0, 0 0, 0.5);
@@ -415,7 +451,7 @@ footer{
 /* Only for My Works */
 .showcaseBox{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     margin-top: -50px !important;
     grid-gap: 10px;
     width: 95%;
@@ -492,10 +528,71 @@ footer{
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    position: relative;
 }
-.projectBox h4{
+.projectInfo{
+    width: 80%;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3vmin;
+}
+.projectInfo > h4{
+    margin: 5px;
+}
+.projectInfo > p {
+    margin-top: 5px;
+    width: 90%;
+    margin: 0 auto;
+}
+.projectInfo > ul{
+    text-align: initial;
+}
+.projectInfo > .longList2{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    width: 40%;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.projectInfo > .longList{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    width: 90%;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.projectBox:hover .projectInfo{
+    opacity: 1;
+    /* border: 1px solid black; */
+    background-color: #084F60;
+    /* padding: 5px; */
+    border-radius: 3px;
+}
+.projectBox h3{
     margin-bottom: 10px;
 }
+/* .projectDetails{
+        position: absolute;
+    top: 43px;
+    left: 0;
+    right: 0;
+    background: aliceblue;
+    width: fit-content;
+    margin: 0 auto;
+} */
 
 /*Only for Deaf Culture */
 
