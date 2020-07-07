@@ -12,7 +12,6 @@
 footer{
     position: absolute;
     bottom: 0;
-    
 }
 @-ms-viewport{
     width: device-width;
@@ -62,6 +61,10 @@ footer{
     }
     #navigationBar{
         visibility: visible !important;
+        display: flex;
+        display: -webkit-flex;
+        height: 88.6562px;
+        justify-content: center;
     }
     .methodContact{
         font-size: 2vw;
@@ -133,20 +136,12 @@ footer{
     .projectInfo{
         font-size: 2vmin !important;
     }
-    /* .projectInfo > p{
-        font-size: 2vmin !important;
-    } */
 }
 #navigationBar{
-    display: flex;
-    /* flex-flow: wrap; */
-    justify-content: center;
-    /* border: solid; */
     padding: 5px;
     visibility: hidden;
 }
 #navigationBar a{
-    /* border: solid blue; */
     width: 20%;
     padding: 10px 10px 8px;
     text-align: center;
@@ -166,7 +161,6 @@ footer{
     border-radius: 2px;
 }
 #navigationBar a:hover::after{
-    /* visibility: hidden; */
     content: '';
     height: 2px;
     width: 30%;
@@ -201,7 +195,6 @@ footer{
     position: absolute;
     top: 0;
     left: 118px;
-    /* background-color: darkcyan; */
     min-width: 175px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -221,18 +214,6 @@ footer{
     border-bottom: solid black;
 }
 
-/* @media only screen and (max-width: 600px){
-    .mobileNav{
-        visibility: visible;
-    }
-    #navigationBar{
-        visibility: hidden;
-    }
-    .contactMeBox{
-        margin-top: -50px;
-    }
-} */
-
 /*For Welcome page only*/
 
 #welcomeContainer{
@@ -245,19 +226,11 @@ footer{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
 }
 footer{
-    /* position: absolute;
-    bottom: 0; */
     text-align: center;
-    /* left: 0;
-    right: 0; */
     font-size: xx-small;
 }
 
 /*For Intro page only */
-#introContainer{
-    /* display: flex; */
-    
-}
 .picContainer{
     position: relative;
     display: grid;
@@ -271,8 +244,11 @@ footer{
     transform: translate(-50%, -50%);
     text-align: center;
 }
-.hoverInfo h4{
-    margin: 5px;;
+.hoverInfo .titleForBio{
+    margin: 5px;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 .picContainer:hover img{
     opacity: .5;
@@ -287,7 +263,6 @@ footer{
     object-fit: cover;
     width: 75%;
     border-radius: 2px;
-    /* max-height: 100%; */
     margin: auto;
     margin-left: auto;
     margin-right: auto;
@@ -306,10 +281,7 @@ footer{
 }
 .contactInfoBox{
     max-width: 400px;
-    /* width: 100%; */
     padding: 0 30px;
-    /* margin: 0 auto; */
-    /* box-sizing: border-box; */
     margin: auto;
     margin-left: auto;
     margin-right: auto;
@@ -326,7 +298,6 @@ footer{
 }
 .contactInfoBox > .methodContact{
     position: relative;
-    /* font-size: 1.7vw; */
     outline: 0;
     overflow: hidden;
     cursor: pointer;
@@ -335,15 +306,9 @@ footer{
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
-    /* -webkit-clip-path: polygon(25px 0%, 100% 0%, calc(100% - 25px) 100%, 0% 100%);
-    clip-path: polygon(25px 0%, 100% 0%, calc(100%-25px) 100%, 0% 100%);
-    background:rgb(187, 74, 159); */
-    /* border: solid black; */
     padding: 20px 75px 20px 25px;
-    /* font-size: 2em; */
     font-family: "Lato", sans-serif;
     font-weight: bold;
-    /* color: #333; */
     text-transform: uppercase;
     margin: 0 0 15px;
     list-style-type: none;
@@ -369,10 +334,7 @@ footer{
     font-size: 1.5em;
     right: 35px;
     top: 50%;
-    /* color: #000; */
     line-height: 0;
-    /* -webkit-transform: translatey(-50%);
-            transform: translatey(-50%); */
     mix-blend-mode: overlay;
   }
   
@@ -384,11 +346,6 @@ footer{
   }
   .contactInfoBox[open] .methodContact:after {
     content: "‑";
-    /* -moz-transform: scale(1, -1);
-    -webkit-transform: scale(1, -1);
-    -o-transform: scale(1, -1);
-    -ms-transform: scale(1, -1);
-    transform: scale(1, -1); */
   }
 .contactInfoBox > p{
     position: relative;
@@ -402,25 +359,15 @@ footer{
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
-    /* -webkit-clip-path: polygon(78px 0%, 100% 0%, calc(100% - 25px) 100%, 16% 100%);
-    clip-path: polygon(78px 0%, 100% 0%, calc(100%-25px) 100%, 16% 100%);
-    background:rgb(187, 74, 159); */
     padding: 10px;
-    /* font-size: 2em; */
     font-family: "Lato", sans-serif;
     font-weight: bold;
-    /* color: #333; */
     text-transform: uppercase;
     margin: 0 0 15px;
     list-style-type: none;
 }
 .contactInfoBox > section{
-    /* position: relative;
-    font-size: 16px;
-    outline: 0;
-    overflow: hidden; */
     cursor: pointer;
-    /* text-align: center; */
     -webkit-transition: all 0.1s ease-out;
     transition: all 0.1s ease-out;
     background-color: rgba(255, 255, 255, .15);  
@@ -456,68 +403,14 @@ footer{
     grid-gap: 10px;
     width: 95%;
     margin: 10px auto;
-    /* border: solid black; */
-    /* background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4); */
 }
-/* @media only screen and (max-width: 1000px){
-    .photosBox{
-        grid-template-columns: auto auto;
-    }
-} */
-/* @media only screen and (max-width: 768px){
-    .showcaseBox{
-        grid-template-columns: auto;
-        margin-top: -50px;
-    }
-    .deafBox{
-        margin-top: -50px !important;
-    }
-    .boxOfInterests{
-        margin-top: -50px !important;
-    }
-    .photosBox{
-        grid-template-columns: auto;
-    }
-    .picOfMe{
-        width: 90%;
-        margin: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .contactInfoBox{
 
-        margin: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-} */
-/* .showcaseBox{
-    border: solid black;
-    max-width: 1000px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
-}
-.showcaseBox::before,
-.showcaseBox::after {
-    display: table;
-    content: '';
-}
-.showcaseBox{
-    clear: both;
-}
-.col-3 {
-    float: left;
-} */
 .githubProject{
     width: 95%;
     border-radius: 2px;
     height: auto;
     text-align: center;
     padding: 2px;
-    /* border: solid red; */
 }
 .projectBox{
     border: solid black;
@@ -576,30 +469,18 @@ footer{
 }
 .projectBox:hover .projectInfo{
     opacity: 1;
-    /* border: 1px solid black; */
     background-color: #084F60;
-    /* padding: 5px; */
     border-radius: 3px;
 }
 .projectBox h3{
     margin-bottom: 10px;
 }
-/* .projectDetails{
-        position: absolute;
-    top: 43px;
-    left: 0;
-    right: 0;
-    background: aliceblue;
-    width: fit-content;
-    margin: 0 auto;
-} */
 
 /*Only for Deaf Culture */
 
 .deafBox{
     float: unset;
     text-align: center;
-    /* width: 80%; */
     margin: 0 auto;
     margin-top: -50px !important;
     padding: 10px;
@@ -610,12 +491,10 @@ footer{
 /* Only for My Interests */
 .boxOfInterests{
     float: unset;
-    /* width: 5rem; */
     margin: 0 auto;
     margin-top: -50px !important;
     padding: 10px;
     height: auto;
-    /* border: solid purple; */
     text-align: center;
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
@@ -625,11 +504,8 @@ footer{
     width: 230px;
     padding: 5px 10px;
     margin: 0px auto;
-    /* border: 1px solid black; */
     border-radius: 5px;
     background-color: 363C49;
-    /* background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(5px); */
 }
 .boxInterests > summary{
     cursor: pointer;
@@ -639,14 +515,10 @@ footer{
     margin-top: 5px;
 }
 .boxOfInterests > h3{
-    /* border: solid 1px; */
     border-bottom: solid 1px;
     padding-bottom: 5px;
     margin: 5px auto;
     width: 250px;
-    /* background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(15px);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4); */
 }
 .boxInterests > summary::marker {
     display: none;
@@ -659,10 +531,7 @@ footer{
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     margin-right: 5px;
-    /* position: absolute; */
     font-size: 1.5em;
-    /* right: 35px; */
-    /* top: 50%; */
     line-height: 0;
     mix-blend-mode: overlay;
   }
