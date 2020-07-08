@@ -20,6 +20,11 @@ footer{
     float: left;
     width: 100%;
 }
+@media only screen and (min-width: 400px){
+    .mobileNav{
+        top: -100px !important;
+    }
+}
 @media only screen and (min-width: 600px){
     .col-T-1 {
         width: 8.33%;
@@ -73,12 +78,6 @@ footer{
         margin-top: unset !important;
     }
 }
-@media only screen and (min-width: 800px){
-    .showcaseBox{
-        grid-template-columns: 1fr 1fr !important;
-        margin-top: -50px !important;
-    }
-}
 @media only screen and (min-width: 768px){
     .col-1 {
         width: 8.33%;
@@ -124,19 +123,39 @@ footer{
     .showcaseBox{
         width: 90% !important;
     }
-    .photosBox{
+    /* .photosBox{
         grid-template-columns: 1fr 1fr !important;
-    }
+    } */
     .introBox h1{
         margin-top: -50px !important;
-    }
-    .picOfMe{
-        width: 90% !important;
     }
     .projectInfo{
         font-size: 2vmin !important;
     }
 }
+@media only screen and (min-width: 800px){
+    .showcaseBox{
+        grid-template-columns: 1fr 1fr !important;
+        margin-top: -50px !important;
+    }
+    .contactInfoBox > p{
+        font-size: 1.3vw !important;
+    }
+    .photosBox{
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .picOfMe{
+        width: 90% !important;
+    }
+    .col-4-L{
+        width: 33.33%;
+    }
+}
+/* @media only screen and (min-width: 800px){
+    .col-4-L{
+        width: 33.33%;
+    }
+} */
 #navigationBar{
     padding: 5px;
     visibility: hidden;
@@ -187,7 +206,7 @@ footer{
 }
 .mobileNav {
     position: relative;
-    top: -80px;
+    top: -120px;
     display: inline-block;
 }
 .drop-content{
@@ -231,6 +250,11 @@ footer{
 }
 
 /*For Intro page only */
+#introContainer > h1{
+    text-align: center;
+    margin-top: -80px;
+    /* margin-bottom: 5px; */
+}
 .picContainer{
     position: relative;
     display: grid;
@@ -261,7 +285,7 @@ footer{
 }
 .picOfMe{
     object-fit: cover;
-    width: 75%;
+    width: 72%;
     border-radius: 2px;
     margin: auto;
     margin-left: auto;
@@ -269,7 +293,7 @@ footer{
 }
 
 .contactMeBox{
-    margin-top: -50px;
+    /* margin-top: -50px; */
 }
 .photosBox{
     display: grid;
@@ -281,7 +305,7 @@ footer{
 }
 .contactInfoBox{
     max-width: 400px;
-    padding: 0 30px;
+    padding: 0 20px;
     margin: auto;
     margin-left: auto;
     margin-right: auto;
@@ -306,7 +330,7 @@ footer{
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
-    padding: 20px 75px 20px 25px;
+    padding: 15px 75px 15px 25px;
     font-family: "Lato", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -349,7 +373,7 @@ footer{
   }
 .contactInfoBox > p{
     position: relative;
-    font-size: 16px;
+    font-size: 12px;
     outline: 0;
     overflow: hidden;
     cursor: pointer;
