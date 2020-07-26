@@ -10,99 +10,108 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../home.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
     </head>
     <body>
         <nav id="navigationBar">
             <a class="phaseOut" href="Intro.html">About Me</a>
             <a class="phaseOut" href="MyWorks.html">My Works</a>
-            <a class="disabledLink"><img alt="Selfie Picture" src="../SecondaryItems/AvatarPic.jpg"></a>
+            <a class="disabledLink"><img alt="Selfie Picture" src="../SecondaryItems/pictures/AvatarPic.jpg"></a>
             <a class="phaseOut" href="DeafCulture.html">Deaf Culture</a>
-            <a class="phaseOut" href="MyInterests.html">My Interests</a>
+            <a class="phaseOut" href="ContactInfo.html">Contact Me</a>
         </nav>
         <nav class="mobileNav">
-            <button class="dropbtn-mobile"><img class="mobilePic" alt="Selfie Picture" src="../SecondaryItems/MobileMenuPic.jpg"></button>
+            <button class="dropbtn-mobile"><img class="mobilePic" alt="Selfie Picture" src="../SecondaryItems/svgIcons/list-alt-regular.svg"></button>
             <div class="drop-content">
                 <a class="mobilePages" href="Intro.html">Intro</a>
                 <a class="mobilePages" href="MyWorks.html">My Works</a>
                 <a class="mobilePages" href="DeafCulture.html">Deaf Culture</a>
-                <a class="mobilePages" href="MyInterests.html">My Interests</a>
+                <a class="mobilePages" href="ContactInfo.html">Contact Me</a>
             </div>
         </nav>
         <main id="introContainer">
-            <h1>Shannon Callahan</h1>
-            <section  class="contactMeBox col-4-L col-T-5">
-                <details class="contactInfoBox">
-                    <summary class="methodContact">Knowledge</summary>
-                    <section>
-                        <ul class="listOfKnowledge">
-                            <p>Frontend</p>
-                            <li>HTML5</li>
-                            <li>CSS</li>
-                            <li>jQuery</li>
-                            <li>Javascript</li>
-                            <li>React</li>
-                        </ul>
-                        <ul class="listOfKnowledge">
-                            <p>Backend</p>
-                            <li>Node.js</li>
-                            <li>MongoDB</li>
-                            <li>Mocha & Chai</li>
-                            <li>Passport</li>
-                            <li>REST APIs</li>
-                        </ul>
-                        <ul class="listOfKnowledge">
-                            <p>Dev Tools</p>
-                            <li>Git</li>
-                            <li>Chrome  |  React Dev Tools</li>
-                            <li>Heroku</li>
-                            <li>Travis CI</li>
-                            <li>Axe Accessibility</li>
-                        </ul>
+            
+            <section id="containerProfile">
+                <div class="profileBox intro">
+                    <div class="picContainer">
+                        <img class="picOfMe" alt="Selfie Picture of me and my dog" src="../SecondaryItems/pictures/SaberAndI.jpeg">
+                    </div>
+                    <h2 id="introTitle">Introduction</h2>
+                    <p id="introStatement">
+                        Doing my own introduction always weird me out. Me as personality, I am more of a rationalist pessimist guy. Along being Deaf person and I am proud of it! Plus, same for my ADHD even if it is an interesting ride. Location??? Currently at Denver, CO.
+                    </p>
+                </div>
+                <div class="profileBox codingKnowledge">
+                    <h2>My Knowledge</h2>
+                    <ul id="knowledgeIcons">
+                        <li class="testCorner">HTML5
+                            <br>
+                            <p><img src="../SecondaryItems/svgIcons/html5-brands.svg"></p> 
+                        </li>
+                        <li class="testCorner">CSS3
+                            <br>
+                            <p><img src="../SecondaryItems/svgIcons/css3-alt-brands.svg"></p> 
+                        </li>
+                        <li class="testCorner">Javascript
+                            <br>
+                            <p><img src="../SecondaryItems/svgIcons/js-square-brands.svg"></p> 
+                        </li>
+                        <li class="testCorner">jQuery
+                            <br>
+                            <p><img src="../SecondaryItems/svgIcons/icons8-jquery.svg"></p>
+                        </li>
+                        <li class="testCorner">Git
+                            <br>
+                            <p><img src="../SecondaryItems/svgIcons/git-alt-brands.svg"></p>
+                        </li>
+                        <li class="testCorner">REST API
+                            <br>
+                            <p><img src="../SecondaryItems/svgIcons/cogs-solid.svg"></p>
+                        </li>
+                        <li class="testCorner">Node.js
+                            <br>
+                            <p><img src="../SecondaryItems/svgIcons/node-js-brands.svg"></p>
+                        </li>
+                        <li class="testCorner">Heroku
+                            <br>
+                            <p><img src="../SecondaryItems/svgIcons/icons8-heroku.svg"></p>
+                        </li>
+                        <li class="testCorner">React
+                            <br>
+                            <p><img src="../SecondaryItems/svgIcons/react-brands.svg"></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="profileBox aboutMe">
+                    <div id="headerAboutMe">
+                        <div class="picContainer">
+                            <img class="aboutMePic" alt="Selfie Picture" src="../SecondaryItems/pictures/JustMe2.jpg">
+                        </div>
+                        <h2>About Me</h2>
+                        <div class="picContainer">
+                            <img class="aboutMePic" alt="Selfie Picture" src="../SecondaryItems/pictures/JustMe2.jpg">
+                        </div>
+                    </div>
+                    <p>
+                        It is nearly 2 years since I started to learn how to code. Oh heck, it is so frustrating but yet equally rewarding! Even my mentor mentioned to me - "You're a champ for your perseverance". That shows you that even if there's a roadblock and I will find a way through! Web development is like a unique clan that welcomes those who passed the test. Other than coding, I do enjoy reading, hiking, gaming, arts, manga, and trying new things.   
+                    </p>
+                    <section id="containerContacts">
+                        <div id="iconsContainer">
+                            <a class="contactBox" href="https://github.com/SCallahan101">
+                                <img class="svgPicDoc" src="../SecondaryItems/svgIcons/github-square-brands.svg">
+                            </a>
+                            <a class="contactBox" href="https://www.linkedin.com/in/scallahanmpa/">
+                                <img class="svgPicDoc" src="../SecondaryItems/svgIcons/linkedin-brands.svg">
+                            </a>
+                            <a class="contactBox" href="../SecondaryItems/ShannonDevResume.pdf" download="MyResume">
+                                <img class="svgPicDoc pdfIcon" alt="pdf icon picture" src="../SecondaryItems/svgIcons/file-pdf-solid.svg">
+                            </a>
+                            <a class="contactBox" href="https://www.goodreads.com/user/show/62064028-shannon-callahan">
+                                <img class="svgPicDoc" src="../SecondaryItems/svgIcons/goodreads-brands.svg">
+                            </a>
+                        </div>
                     </section>
-                </details>
-                <details class="contactInfoBox">
-                    <summary class="methodContact">Email</summary>
-                    <p>Shannonc619@gmail.com</p>
-                </details>
-                <details class="contactInfoBox">
-                    <summary class="methodContact">Downloadable Resume</summary>
-                <p>
-                    <a href="../SecondaryItems/ShannonDevResume.pdf" download="MyResume">--- 
-                        <img id="svgPicDoc" alt="pdf icon picture" src="../SecondaryItems/file-download-solid.svg"> ---
-                    </a>
-                </p>    
-                </details>
-                <details class="contactInfoBox">
-                    <summary class="methodContact">Github</summary>
-                    <p><a href="https://github.com/SCallahan101">SCallahan101</a></p>
-                </details>
-                <details class="contactInfoBox">
-                    <summary class="methodContact">Linkedin</summary>
-                    <p><a href="https://www.linkedin.com/in/scallahanmpa/">My Profile</a></p>
-                </details>
-            </section>
-            <section class="introBox col-7 col-T-6">
-                <div class="photosBox">
-                    <div class="picContainer">
-                        <img class="picOfMe" alt="Selfie Picture of me and my dog" src="../SecondaryItems/SaberAndI.jpeg">
-                        <div class="hoverInfo">
-                            <p class="titleForBio">-Present-</p>
-                            <p>Aim to be a knowledgeable Frontend Developer!</p>
-                            <p>Fresh out of the Thinkful coding bootcamp!</p>
-                            <p>Currently in Denver, CO</p>
-                        </div>
-                    </div>
-                    <div class="picContainer">
-                        <img class="picOfMe" alt="Selfie Picture" src="../SecondaryItems/JustMe.jpeg">
-                        <div class="hoverInfo">
-                            <p class="titleForBio">-Future-</p>
-                            <p>The goal is to be a Fullstack Developer!</p>
-                            <p>Leading Developer for the new a11y feature for deaf users accessibility</p>
-                            <p>Establish a Programming Curriculum for Deaf Coders!</p>
-                            <p></p>
-                        </div>
-                    </div>
                 </div>
             </section>
         </main>
