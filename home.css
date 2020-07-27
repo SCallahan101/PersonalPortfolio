@@ -296,6 +296,8 @@ footer{
     display: grid;
     grid-template-columns: 1fr;
 }
+
+
 .profileBox{
     border: solid 1px #F6C859;
     width: 90%;
