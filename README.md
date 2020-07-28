@@ -1,6 +1,6 @@
 Project: First Web Development Portfolio
 
-Link: https://shannoncallahanportfolio.herokuapp.com/home.html
+Link: https://shannon-callahan-portfolio.herokuapp.com/home.html
 
 Preview Pics:
 ![image](https://i.gyazo.com/65a287a6949c44d6e9c2b15bd490e025.jpg)
