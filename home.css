@@ -84,7 +84,7 @@ footer{
         position: absolute !important;
     }
     #containerProfile{
-        grid-template-columns: 1fr 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
         /* grid-template-rows: 20% 20% 20% 20% 20% !important; */
     }
     .intro{
@@ -106,8 +106,8 @@ footer{
         grid-row-end: 5; */
     }
     .aboutMe{
-        /* grid-column-start: 4;
-        grid-column-end: 5; */
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
     .methodContact{
         font-size: 2vw;
@@ -177,6 +177,14 @@ footer{
     .techUsed > p{
         /* font-size: .8em !important; */
     }
+    #iconsContainer{
+        width: 290px !important;
+        margin: 10px auto 0 !important;
+    }
+    .picOfMe{
+        max-width: 340px !important;
+        transition: .5s;
+    }
     /* .boxOfInterests{
         width: 50% !important;
     } */
@@ -192,12 +200,30 @@ footer{
     .photosBox{
         grid-template-columns: 1fr 1fr !important;
     }
+    #containerContactMe{
+        width: 50% !important;
+    }
+    .textbox{
+        height: 80px !important;
+    }
     /* .picOfMe{
         width: 90% !important;
     } */
     /* .col-4-L{
         width: 33.33%;
     } */
+}
+@media only screen and (min-width: 1000px){
+#introStatement{
+    font-size: large !important;
+    width: 48% !important;
+    left: 45px !important;
+    transition: .5s;
+}
+#introTitle{
+    right: 65px !important;
+    transition: .5s;
+}
 }
 #navigationBar{
     padding: 5px;
@@ -282,7 +308,7 @@ footer{
     display: block;
 }
 .drop-content a:hover{
-    border-bottom: solid black;
+    border-bottom: solid #F6C859;
 }
 
 /*For Welcome page only*/
@@ -303,7 +329,7 @@ footer{
 
 /*For Intro page only */
 #containerProfile{
-    border: solid green;
+    /* border: solid green; */
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -332,6 +358,7 @@ footer{
     position: absolute;
     top: 0;
     right: 20px;
+    transition: .5s;
 }
 #introStatement{
     position: absolute;
@@ -344,6 +371,7 @@ footer{
     background: rgba(255, 255, 255, .15);
     /* background: rgba(0, 0, 0, 0.25); */
     backdrop-filter: blur(5px);
+    transition: .5s;
 }
 .profileBox > h2{
     font-weight: 400;
@@ -458,6 +486,7 @@ footer{
     /* object-fit: cover; */
     width: 100%;
     max-width: 317px;
+    transition: .5s;
     /* border-radius: 2px;
     margin: auto;
     margin-left: auto;
