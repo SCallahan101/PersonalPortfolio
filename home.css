@@ -115,6 +115,7 @@ footer{
 #navigationBar a:hover{
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
     border-radius: 2px;
 }
@@ -178,6 +179,7 @@ footer{
     width: fit-content;
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
     text-shadow: 2px 4px 3px rgba(0,0,0,0.7);
 }
@@ -201,7 +203,9 @@ footer{
     text-shadow: 2px 4px 3px rgba(0,0,0,0.7);
     background: rgba(255, 255, 255, .15);
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     text-align: center;
+    position: relative;
 }
 .aboutMe > p {
     margin: 0 20px 20px;
@@ -223,6 +227,7 @@ footer{
     width: 178px;
     background: rgba(255, 255, 255, .15);
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     transition: .5s;
 }
 #introStatement > strong{
@@ -328,6 +333,7 @@ footer{
 #iconsContainer{
     background: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     width: 100%;
     border-radius: 10px;
     border: solid 1px #F6C859;
@@ -358,6 +364,7 @@ footer{
     width: auto;
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
     position: relative;
 }
@@ -370,6 +377,7 @@ footer{
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     font-size: 3vmin;
 }
 .extraDetails::-webkit-details-marker{
@@ -389,6 +397,7 @@ footer{
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     font-size: 3vmin;
 }
 .techUsed > h4{
@@ -404,6 +413,7 @@ footer{
     right: 0;
     background: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     width: 90%;
     margin: 5px auto;
     padding: 6px;
@@ -429,6 +439,7 @@ footer{
     border-radius: 5px;
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
 }
 #deafCultureLink{
@@ -449,6 +460,7 @@ footer{
     border-radius: 5px;
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
 }
 #emailForm{
