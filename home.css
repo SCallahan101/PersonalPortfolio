@@ -173,8 +173,12 @@ footer{
 /*For Welcome page only*/
 
 #welcomeContainer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 18rem;
     text-align: center;
-    margin: 50px auto;
+    margin: 0 auto;
     padding: 30px;
     width: fit-content;
     background-color: rgba(255, 255, 255, .15);  
