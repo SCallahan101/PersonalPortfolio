@@ -58,9 +58,9 @@ footer{
         font-size: 2vmin !important;
         width: 50% !important;
     }
-    .deafBox{
+    /* .deafBox{
         width: 60% !important;
-    }
+    } */
     .techUsed{
         width: 50% !important;
     }
@@ -292,8 +292,11 @@ footer{
     width: 50px;
     height: 67px;
 }
-#introContainer > h1{
+h1{
     text-align: center;
+}
+#introContainer > h1{
+    /* text-align: center; */
     margin-top: -80px;
 }
 #headerAboutMe{
@@ -432,9 +435,11 @@ footer{
 
 /*Only for Deaf Culture */
 
-.deafBox{
-    float: unset;
-    width: 90%;
+/* .deafBox{ */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* float: unset; */
+    /* width: 90%;
     text-align: center;
     margin: 0 auto;
     padding: 10px;
@@ -446,9 +451,44 @@ footer{
     -webkit-backdrop-filter: blur(5px);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
 }
-#deafCultureLink{
-    color: #F6C859;
+.deafBox ol{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    --unit: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+/* .infoBox{
+    border: solid 1px black;
+    height: 50px;
+    width: 200px;
+    padding: 20px;
+    counter-increment: section;
+    position: relative;
+    display: block;
+    margin: 2rem 0;
 }
+.infoBox p{
+    margin: auto;
+}
+.infoBox::after{
+        content: counter(section);
+        position: absolute;
+        border-radius: 50%;
+        padding: 10px;
+        height: 1.25em;
+        width: 1.25em;
+        background-color: black;
+        text-align: center;
+        line-height: 1.25em;
+        color: white;
+        font-size: 1em;
+} */
 
 /* Only for Contact Me */
 
